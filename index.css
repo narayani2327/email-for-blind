@@ -59,8 +59,7 @@ h3{
     background-color: var(--darkbrown);
     color: var(--lightbrownn);
     padding: 20px;
-    width: 200px;
-    padding: 30px;
+    width: 250px;
     border-radius: 10px;
     height: fit-content;
 }
@@ -74,12 +73,13 @@ h3{
 .left-side ul, .right-side ul{
     font-size: 18px;
     font-family: sans-serif;
+    padding-left: 25px;
 }
 .left-side li, .right-side li{
     margin-bottom: 15px;
 }
 .index{
-    width: 840px;
+    width: 800px;
 }
 .mail{
     background-color: var(--white);
@@ -90,10 +90,10 @@ h3{
     display: inline-block;
 }
 .name{
-    width: 200px;
+    width: 180px;
 }
 .subject{
-    width: 510px;
+    width: 480px;
 }
 .time{
     width: 80px;
@@ -108,7 +108,7 @@ h3{
 .compose{
     display: none;
     border: 2px solid var(--darkbrown);
-    width: 840px;
+    width: 780px;
     padding: 40px;
 }
 label{
@@ -125,7 +125,7 @@ input{
     height: 50px;
     font-size: 20px;
     padding: 10px;
-    margin-left: 650px;
+    margin-left: 590px;
     margin-top: 20px;
     outline: none;
     background-color: var(--darkbrown);
