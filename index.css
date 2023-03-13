@@ -66,7 +66,6 @@ h3{
 .left-side p, .right-side p{
     margin-bottom: 20px;
     font-size: 25px;
-    text-align: justify;
     text-decoration: underline var(--lightbrownn);
     font-family: 'Vollkorn', serif; 
 }
