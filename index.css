@@ -1,0 +1,115 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Vollkorn:ital,wght@1,500&display=swap');
+
+:root{
+    --black:#000000;
+    --white:#ffffff;
+    --darkbrown:#3c1518;
+    --brown:#69140e;
+    --lightbrown:#a44200;
+    --lightbrownn:#fbc488;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--lightbrownn);
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    color: var(--darkbrown);
+    font-size: 40px;
+    font-family: 'Kalam', cursive;
+}
+h2,h3{
+    color: var(--lightbrown);
+    text-align: center;
+    font-size: 30px;
+}
+h3{
+    font-size: 15px;
+}
+.navbar{
+    text-align: center;
+}
+.navbar button{
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: 'Vollkorn', serif;
+    letter-spacing: 2px;
+    background-color: var(--darkbrown);
+    color: var(--lightbrownn);
+    border-radius: 10px;
+    transition-duration: 1s;
+    margin: 20px;
+    width: 120px;
+}
+.navbar button:hover{
+    background-color: var(--lightbrownn);
+    color: var(--darkbrown);
+    box-shadow: 2px 2px 1px 1px var(--darkbrown);
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+.left-side, .right-side{
+    background-color: var(--darkbrown);
+    color: var(--lightbrownn);
+    padding: 20px;
+    width: 200px;
+    padding: 30px;
+    border-radius: 10px;
+    height: fit-content;
+}
+.left-side p, .right-side p{
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-align: justify;
+    text-decoration: underline var(--lightbrownn);
+    font-family: 'Vollkorn', serif; 
+}
+.left-side ul, .right-side ul{
+    font-size: 18px;
+    font-family: sans-serif;
+}
+.left-side li, .right-side li{
+    margin-bottom: 15px;
+}
+.index{
+    display: none;
+}
+.compose{
+    /* display: none; */
+    border: 2px solid var(--darkbrown);
+    width: 840px;
+    padding: 40px;
+}
+label{
+    font-size: 20px;
+    font-weight: 900;
+}
+input{
+    width: 670px;
+    height: 25px;
+    margin: 5px;
+}
+#submit{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 650px;
+    margin-top: 20px;
+    outline: none;
+    background-color: var(--darkbrown);
+    border: none;
+    color: var(--lightbrownn);
+    font-weight: 900;
+    border-radius: 20px;
+    font-family: 'Vollkorn', serif;
+    letter-spacing: 2px;
+}
