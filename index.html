@@ -4,46 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Email For Blind</title>
 </head>
 <body>
-    <h1>Email For Blind</h1>
-    <h4>The National Institute of Enginerring</h4>
+    <h1>EMAIL FOR BLIND</h1>
+    <h2>The National Institute of Enginerring</h2>
+    <h3>Manandavadi Road Mysuru – 570008 Karnataka</h3>
     <div class="navbar">
-        <button>Index</button>
-        <button>Compose</button>
+        <button id="index">Index</button>
+        <button id="compose">Compose</button>
     </div>
-    <div class="left-side">
-        <p>Details of developers</p>
-        <ul>
-            <li>Narayani H</li>
-            <li>Manoj C S</li>
-            <li>Satkreethi </li>
-            <li>Shreya M</li>
-        </ul>
-    </div>
-    <div class="index">
-        <div class="mail">
-            <span class="name">name</span>
-            <span>Subject</span>
+    <div class="main">
+        <div class="left-side">
+            <p>Details of developers</p>
+            <ul>
+                <li>Narayani H - <br>4NI19CS073</li>
+                <li>Manoj C S - <br>4NI19CS066</li>
+                <li>Sathkeerthi Y Agnihothri - <br>4NI19CS073</li>
+                <li>Shreya M<br>4NI20CS407</li>
+            </ul>
+        </div>
+        <div class="index">
+            <div class="mail">
+                <span class="name">name</span>
+                <span>Subject</span>
+            </div>
+        </div>
+        <div class="compose">
+            <form action="">
+                <label for="to">To:&emsp;&ensp;&nbsp;&nbsp;</label>
+                <input type="email" name="to" id="to"><br>
+                <label for="subject">Subject:</label>
+                <input type="text" name="subject" id="subject"><br>
+                <label for="body">Body</label><br>
+                <textarea name="body" id="body" cols="100" rows="25"></textarea>
+                <input type="submit" name="submit" id="submit">
+            </form>
+        </div>
+        <div class="right-side">
+            <p>Recent email addresss</p>
+            <ul>
+                <li>hello@gmail.com</li>
+                <li>nie234@gmail.com</li>
+                <li>hello@gmail.com</li>
+                <li>nie234@gmail.com</li>
+                <li>hello@gmail.com</li>
+                <li>nie234@gmail.com</li>
+                <li>hello@gmail.com</li>
+            </ul>
         </div>
     </div>
-    <div class="compose">
-        <form action="">
-            <label for="to">To:</label>
-            <input type="email" name="to" id="to">
-            <label for="subject">Subject:</label>
-            <input type="text" name="subject" id="subject">
-            <label for="body">Body</label>
-            <textarea name="body" id="body" cols="100" rows="25"></textarea>
-        </form>
-    </div>
-    <div class="right-side">
-        <p>Recent email addresss</p>
-        <ul>
-            <li>hello@gmail.com</li>
-            <li>nie234@gmail.com</li>
-        </ul>
-    </div>
+    <script>
+        document.querySelector("#index").addEventListener("click",()=>{
+            document.querySelector(".index").style.display="block"
+            document.querySelector(".compose").style.display="none"
+            console.log("hello")
+        });
+        document.querySelector("#compose").addEventListener("click",()=>{
+            document.querySelector(".compose").style.display="block"
+            document.querySelector(".index").style.display="none"
+            console.log("BTS")
+        });
+    </script>
 </body>
 </html>
